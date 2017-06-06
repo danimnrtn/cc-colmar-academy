@@ -2,8 +2,16 @@ html {
   width: 100%;
   margin: 0 auto;
   font-family: 'Droid Sans', sans-serif;
+  font-size: 16px;
 }
 
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 100px 0px 25px 0px;
+}
 
 /*   HEADER   */
 header {
@@ -34,6 +42,7 @@ header {
 }
 
 nav a {
+  font-family: 'Montserrat', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   color: black;
@@ -45,4 +54,44 @@ nav a:hover {
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-delay: 10s;
+}
+
+/*   BANNER 1   */
+#banner {
+  display: flex;
+  background-color: darkgrey;
+}
+
+#banner .left {
+  width: 60%;
+  padding: 32px 20px 32px 24px;
+}
+
+.banner-img {
+  background-image: url("../media/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#banner .right {
+  width: 40%;
+  padding: 32px 24px 32px 20px;
+}
+
+#banner h3 {
+  margin-bottom: 25px;
+  margin-right: 100px;
+  line-height: 1.4;
+}
+
+.button {
+  background-color: grey;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 33%;
+  padding: 8px;
+  width: 25%;
+  text-align: center;
 }
