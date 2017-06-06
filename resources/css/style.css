@@ -1,0 +1,48 @@
+html {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+
+/*   HEADER   */
+header {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 64px;
+  padding: 0px 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.logo span {
+  font-weight: 400;
+  opacity: .5;
+}
+
+.logo-img {
+  padding-right: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  padding-right: 16px;
+}
+
+nav a:hover {
+  opacity: .5;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 10s;
+}
