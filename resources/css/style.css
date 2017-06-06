@@ -13,6 +13,53 @@ h1 {
   margin: 100px 0px 25px 0px;
 }
 
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.2;
+  opacity: .5;
+  padding-right: 15%;
+}
+
+.left {
+  width: 60%;
+  padding: 32px 20px 32px 24px;
+}
+
+.right {
+  width: 40%;
+  padding: 32px 24px 32px 20px;
+}
+
+.side {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  height: 150px;
+  padding-bottom: 16px;
+  border-left: 1px darkgrey solid;
+}
+
+.side:hover {
+  background-color: darkgrey;
+}
+
+.side-img {
+  width: 35%;
+  height: 100%;
+  margin: 0 16px;
+}
+
+.side-txt {
+}
+
+
 /*   HEADER   */
 header {
   font-weight: bold;
@@ -62,21 +109,11 @@ nav a:hover {
   background-color: darkgrey;
 }
 
-#banner .left {
-  width: 60%;
-  padding: 32px 20px 32px 24px;
-}
-
-.banner-img {
+#banner .banner-img {
   background-image: url("../media/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
-}
-
-#banner .right {
-  width: 40%;
-  padding: 32px 24px 32px 20px;
 }
 
 #banner h3 {
@@ -87,11 +124,55 @@ nav a:hover {
 
 .button {
   background-color: grey;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  color: white;
   margin-bottom: 33%;
   padding: 8px;
   width: 25%;
   text-align: center;
+}
+
+.button a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+/*   BANNER 2   */
+#learn {
+  display: flex;
+  padding-bottom: 25px;
+}
+
+#learn .banner-img {
+  background-image: url("../media/information-main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75%;
+}
+
+#learn h2 {
+  margin: 32px 0px 24px 0px;
+}
+
+#learn #sr {
+  padding-top: 24px;
+  opacity: 1;
+}
+
+#orientation .side-img {
+  background-image:url("../media/information-orientation.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#campus .side-img {
+  background-image:url("../media/information-campus.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#lecture .side-img {
+  background-image:url("../media/information-guest-lecture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
