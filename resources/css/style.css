@@ -61,10 +61,9 @@ a:hover {
   display: flex;
   flex-flow: row;
   align-items: center;
-  height: 150px;
+  height: auto;
   border-left: 1px #F1EDEE solid;
   padding: 16px;
-  overflow: hidden;
 }
 
 .side:hover {
@@ -72,8 +71,8 @@ a:hover {
 }
 
 .side-img {
-  width: 150px;
-  height: 100%;
+  width: 35%;
+  height: auto;
 }
 
 .side-txt {
