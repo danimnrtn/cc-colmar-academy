@@ -473,6 +473,10 @@ and (max-width: 470px) {
     padding: 0 16px 32px 16px;
   }
 
+  .gallery a {
+    width: 100%;
+  }
+
   .section {
     display: flex;
     flex-direction: column;
