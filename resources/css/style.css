@@ -64,6 +64,7 @@ a:hover {
   height: 150px;
   border-left: 1px #F1EDEE solid;
   padding: 16px;
+  overflow: hidden;
 }
 
 .side:hover {
@@ -123,10 +124,8 @@ nav a {
 }
 
 #banner .banner-img {
-  background-image: url("../media/banner.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
+  display: block;
+  width: 100%;
 }
 
 #banner h3 {
@@ -161,11 +160,9 @@ nav a {
 }
 
 #learn .banner-img {
-  background-image: url("../media/information-main.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 75%;
-  margin-top: 16px;
+  display: block;
+  margin: 16px auto 0;
+  width: 100%;
 }
 
 #learn h2 {
@@ -178,21 +175,14 @@ nav a {
 }
 
 #orientation .side-img {
-  background-image:url("../media/information-orientation.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 #campus .side-img {
-  background-image:url("../media/information-campus.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+
 }
 
 #lecture .side-img {
-  background-image:url("../media/information-guest-lecture.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+
 }
 
 #learn h4, p {
@@ -316,15 +306,10 @@ video {
 }
 
 #fisma .side-img {
-  background-image:url("../media/thesis-fisma.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+
 }
 
 #now .side-img {
-  background-image:url("../media/thesis-now-and-then.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /*   FOOTER   */
