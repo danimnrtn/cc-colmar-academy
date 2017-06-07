@@ -81,6 +81,11 @@ a:hover {
 
 
 /*   HEADER   */
+
+.mobilenav {
+  display: none;
+}
+
 header {
   font-weight: bold;
   display: flex;
@@ -117,6 +122,11 @@ nav a {
 }
 
 /*   BANNER 1   */
+
+#mbanner {
+  display: none;
+}
+
 #banner {
   display: flex;
   background-color: #F1EDEE;
@@ -153,6 +163,11 @@ nav a {
 }
 
 /*   BANNER 2   */
+
+#mlearn {
+  display: none;
+}
+
 #learn {
   display: flex;
   padding-bottom: 25px;
@@ -173,22 +188,15 @@ nav a {
   opacity: .5;
 }
 
-#orientation .side-img {
-}
-
-#campus .side-img {
-
-}
-
-#lecture .side-img {
-
-}
-
 #learn h4, p {
   padding-bottom: 10px;
 }
 
 /*   BANNER 3   */
+
+.mcourse {
+  display: none;
+}
 
 .course {
   background-color: #F1EDEE;
@@ -273,6 +281,11 @@ nav a {
 }
 
 /*   BANNER 4   */
+
+.mthesis {
+  display: none;
+}
+
 .thesis {
   display: flex;
   flex-direction: column;
@@ -323,4 +336,234 @@ footer {
 .footer p {
   padding: 0;
   margin: 0;
+}
+
+
+
+
+/*   .............MEDIA.............   */
+
+@media only screen
+and (max-width: 470px) {
+
+  /*   UNIVERSAL STYLES   */
+  h1 {
+    margin: 32px 16px;
+  }
+
+  .left, .right {
+    width: 100%;
+    padding: 32px 16px;
+  }
+
+  .side {
+    display: flex;
+    height: auto;
+    border: none;
+    padding: 16px;
+  }
+
+  .side-img {
+    width: 35%;
+    height: auto;
+  }
+
+  .side-txt {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 16px;
+  }
+
+  /*   HEADER   */
+  header {
+    display: none;
+  }
+
+  .mobilenav {
+    display: flex;
+    overflow: hidden;
+    height: 64px;
+    padding: 0px 24px;
+  }
+
+  .mobilenav nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  /*   BANNER 1   */
+  #banner {
+    display: none;
+  }
+
+  #mbanner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F1EDEE;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  #mbanner .banner-img {
+    display: block;
+    max-width: 100%;
+  }
+
+  #mbanner h3 {
+    margin: 0px 16px;
+    line-height: 1.4;
+  }
+
+  .button {
+    margin: 32px auto;
+    padding: 8px;
+  }
+
+  /*   BANNER 2   */
+  #learn {
+    display: none;
+  }
+
+  #mlearn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #mlearn .side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+    #mlearn img {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+  }
+
+    #mlearn h4, p, a {
+      padding: 0px;
+      line-height: 1.5;
+  }
+
+  /*   BANNER 3   */
+  .course {
+    display: none;
+  }
+
+  .mcourse {
+    display: flex;
+    flex-direction: column;
+    background-color: #F1EDEE;
+  }
+
+  .mcourse h2 {
+    text-align: center;
+    padding: 32px 0 27px 0;
+  }
+
+  .gallery {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 16px 32px 16px;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 5px 0px;
+  }
+  .section h4 {
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 35px 0;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+  }
+
+  .img-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #software .img-bg {
+    background-image:url("../media/course-software.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    height: auto;
+  }
+
+  #computer-art .img-bg {
+    background-image:url("../media/course-computer-art.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    height: auto;
+  }
+
+  #design .img-bg {
+    background-image:url("../media/course-design.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40%;
+    height: auto;
+  }
+
+  #data .img-bg {
+    background-image:url("../media/course-data.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    height: auto;
+  }
+
+  #business .img-bg {
+    background-image:url("../media/course-business.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    height: auto;
+  }
+
+  #marketing .img-bg {
+    background-image:url("../media/course-marketing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 5%;
+    height: auto;
+  }
+
+  /*   BANNER 4  */
+  .thesis {
+    display: none;
+  }
+
+  .mthesis {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+  }
+
+  .mthesis h2 {
+    padding-bottom: 16px;
+  }
+
+  video {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /*  FOOTER  */
+  footer nav {
+    display: none;
 }
