@@ -104,6 +104,15 @@ header {
   font-weight: 600;
 }
 
+.logolink {
+  color: black;
+}
+
+.logolink:hover {
+  color: black;
+  opacity: .75;
+}
+
 .logo span {
   font-weight: 400;
   opacity: .5;
@@ -317,13 +326,6 @@ video {
   padding-bottom: 10px;
 }
 
-#fisma .side-img {
-
-}
-
-#now .side-img {
-}
-
 /*   FOOTER   */
 footer {
   display: flex;
@@ -340,12 +342,78 @@ footer {
 
 
 
-
 /*   .............MEDIA.............   */
 
 @media only screen
-and (max-width: 470px) {
+and (max-width: 950px) {
 
+  .left, .right {
+    height: auto;
+    padding-bottom: 0px;
+  }
+
+  #banner {
+    padding-bottom: 50px;
+    height: 400px;
+  }
+
+  h1 {
+    margin: 0px 0px 25px 0px;
+  }
+
+  footer {
+    margin-top: 25px;
+  }
+
+}
+
+@media only screen
+and (max-width: 900px) {
+
+  .side {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    height: auto;
+    border-left: 1px #F1EDEE solid;
+    padding-right: 0px;
+  }
+
+
+  .side-img {
+    width: 50%;
+    height: auto;
+  }
+
+  .side-txt {
+    padding-left: 16px;
+  }
+
+  .side p {
+    padding-right: 0;
+  }
+
+}
+
+@media only screen
+and (max-width: 875px) {
+
+  #banner {
+    padding-bottom: 1%;
+  }
+}
+
+@media only screen
+and (max-width: 825px) {
+
+  #banner {
+    padding-bottom: 0;
+  }
+
+}
+
+@media only screen
+and (max-width: 770px) {
   /*   UNIVERSAL STYLES   */
   h1 {
     margin: 32px 16px;
@@ -388,7 +456,7 @@ and (max-width: 470px) {
 
   .mobilenav nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
   }
@@ -405,6 +473,7 @@ and (max-width: 470px) {
     background-color: #F1EDEE;
     margin: 0 auto;
     height: auto;
+    padding-bottom: 32px;
   }
 
   #mbanner .banner-img {
@@ -418,8 +487,9 @@ and (max-width: 470px) {
   }
 
   .button {
-    margin: 32px auto;
-    padding: 8px;
+    margin: 16px;
+    padding: 15px;
+    width: 15%;
   }
 
   /*   BANNER 2   */
@@ -430,6 +500,7 @@ and (max-width: 470px) {
   #mlearn {
     display: flex;
     flex-direction: column;
+    padding: 32px 0;
   }
 
   #mlearn .side {
@@ -440,14 +511,109 @@ and (max-width: 470px) {
 
     #mlearn img {
       display: block;
-      width: 100%;
-      margin: 0 auto;
+      width: 75%;
+      margin: 0;
   }
 
     #mlearn h4, p, a {
       padding: 0px;
       line-height: 1.5;
   }
+
+  /*   BANNER 3   */
+  .course {
+    padding: 25px;
+  }
+
+  .course h2 {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  .gallery {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin: 15px;
+    background-color: white;
+    padding-bottom: 25px;
+  }
+
+  #software .img-bg {
+    height: 150px;
+    background-position: center;
+  }
+
+  #computer-art .img-bg {
+    height: 150px;
+    background-position: center;
+  }
+
+  #design .img-bg {
+    height: 150px;
+    background-position: center;
+  }
+
+  #data .img-bg {
+    height: 150px;
+    background-position: center;
+  }
+
+  #business .img-bg {
+    height: 150px;
+    background-position: center;
+  }
+
+  #marketing .img-bg {
+    height: 150px;
+    background-position: center;
+  }
+
+  /*   BANNER 4  */
+  .thesis {
+    display: none;
+  }
+
+  .mthesis {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+  }
+
+  .mthesis h2 {
+    padding-bottom: 16px;
+  }
+
+  video {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .mthesis h4 {
+    font-size: 1.75rem;
+    padding-top: 10px;
+  }
+}
+
+@media only screen
+and (max-width: 470px) {
+
+    .mobilenav nav {
+      justify-content: space-between;
+    }
+
+    .button {
+      width: 25%;
+    }
 
   /*   BANNER 3   */
   .course {
@@ -499,72 +665,33 @@ and (max-width: 470px) {
   }
 
   #software .img-bg {
-    background-image:url("../media/course-software.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: 20%;
     height: auto;
   }
 
   #computer-art .img-bg {
-    background-image:url("../media/course-computer-art.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: 20%;
     height: auto;
   }
 
   #design .img-bg {
-    background-image:url("../media/course-design.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: 40%;
     height: auto;
   }
 
   #data .img-bg {
-    background-image:url("../media/course-data.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: 20%;
     height: auto;
   }
 
   #business .img-bg {
-    background-image:url("../media/course-business.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: 20%;
     height: auto;
   }
 
   #marketing .img-bg {
-    background-image:url("../media/course-marketing.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: 5%;
     height: auto;
-  }
-
-  /*   BANNER 4  */
-  .thesis {
-    display: none;
-  }
-
-  .mthesis {
-    display: flex;
-    flex-direction: column;
-    padding: 32px 16px;
-  }
-
-  .mthesis h2 {
-    padding-bottom: 16px;
-  }
-
-  video {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
   }
 
   /*  FOOTER  */
